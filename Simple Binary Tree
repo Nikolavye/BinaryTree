@@ -1,9 +1,21 @@
 /*define a data structure for the node of a binary tree*/
 
 typdef struct BINARYNODE{
-  int data;//void *data
-  BinaryNode *left;
-  BinaryNode *right;
+    int data;//void *data
+    BinaryNode *left;
+    BinaryNode *right;
 }BinaryNode;
 
 
+/*Insert a node for the binary tree*/
+//firstly check if the root node is empty or not
+//if it's empty, allocate space and creat a new node as root node
+//we set some conditions, the data in the left node would be greater than that of right
+
+void CreatNode(BinaryNode **node, int value)
+{
+     if ((*node) == NULL)
+     {
+          BinaryNode *temp = (*BinaryNode)malloc(sizeof(BinaryNode));
+     }
+}
