@@ -17,5 +17,20 @@ void CreatNode(BinaryNode **node, int value)
      if ((*node) == NULL)
      {
           BinaryNode *temp = (*BinaryNode)malloc(sizeof(BinaryNode));
+          /*
+            BinaryNode *temp = NULL;
+            temp = malloc(sizeof(BinaryNode));
+          */
+          //
+          temp->data = value;
+          temp->left = NULL;
+          temp->right = NULL;
+          
+          *node = temp
+     }
+     
+     if  ((*node)->data > value)
+     {
+          CreatNode((*node)->left, int value)
      }
 }
